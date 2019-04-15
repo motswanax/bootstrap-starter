@@ -684,5 +684,44 @@
 </section>
 <!-- end of activities/quick post -->
 
+<!-- footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="row border-top pt-3">
+                    <div class="col-lg-6 text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mr-2">
+                                <a class="text-dark" href="#">SVS</a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a class="text-dark" href="#">About</a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a class="text-dark" href="#">Support</a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a class="text-dark" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <p>&copy; Copyright<span id="year"></span>. Made with <i class="fas fa-heart text-danger"></i> by <span class="text-danger">MotswanaX</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyrightYear() {
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('year').innerHTML = ' ' + year;
+        }
+        copyrightYear();
+    </script>
+</footer>
+<!-- end of footer -->
 </body>
 </html>
